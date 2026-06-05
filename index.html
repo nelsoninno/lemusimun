@@ -140,6 +140,11 @@
       background-repeat: no-repeat;
       opacity: 0.25;
       filter: blur(2px);
+      /* Difuminado en los bordes (% = responsivo en cualquier pantalla) */
+      -webkit-mask-image: linear-gradient(to right,
+        transparent 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 78%, transparent 100%);
+      mask-image: linear-gradient(to right,
+        transparent 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 78%, transparent 100%);
     }
     /* Gradiente sobre la imagen para legibilidad */
     .hero-bg-overlay {
@@ -744,7 +749,7 @@
       letter-spacing: 0.08em;
     }
     .team-info {
-      padding: 1.25rem 3.8rem 1.25rem 1.5rem;
+      padding: 1.25rem 1.5rem 3.6rem 1.5rem;
       border-top: 1px solid var(--border);
       position: relative;
     }
@@ -1054,7 +1059,7 @@
       nav { padding: 1rem 1.5rem; }
       .nav-inner { padding: 1rem 1.5rem; }
       .nav-links { display: none; }
-      .hamburger { display: flex; }
+      .hamburger { display: flex; margin-left: auto; }
       #sobre-nosotros, #portafolio, #equipo, #stats,
       #contacto, footer { padding-left: 1.5rem; padding-right: 1.5rem; }
       #por-que, #servicios { padding-left: 1.5rem; padding-right: 1.5rem; }
