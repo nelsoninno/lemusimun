@@ -140,15 +140,9 @@
       background-repeat: no-repeat;
       opacity: 0.25;
       filter: blur(3px);
-      /* Difuminado en los 4 bordes para que la foto no se vea cortada (% = responsivo) */
-      -webkit-mask-image:
-        linear-gradient(to right, transparent 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 78%, transparent 100%),
-        linear-gradient(to bottom, transparent 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, transparent 100%);
-      -webkit-mask-composite: source-in;
-      mask-image:
-        linear-gradient(to right, transparent 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 78%, transparent 100%),
-        linear-gradient(to bottom, transparent 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, transparent 100%);
-      mask-composite: intersect;
+      /* Difuminado radial: la imagen se funde con el negro en todos los bordes (sin cortes) */
+      -webkit-mask-image: radial-gradient(ellipse 65% 60% at 50% 45%, #000 30%, transparent 78%);
+      mask-image: radial-gradient(ellipse 65% 60% at 50% 45%, #000 30%, transparent 78%);
     }
     /* Gradiente sobre la imagen para legibilidad */
     .hero-bg-overlay {
@@ -1593,4 +1587,9 @@
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
-      
+        <div>
+          <p class="footer-col-title">Contacto</p>
+          <ul class="footer-links">
+            <li><a href="tel:+50322335000">+(503) 2233-5000</a></li>
+            <li><a href="mailto:info@lemusimuncorp.com">info@lemusimuncorp.com</a></li>
+            <li>Res. Arcos de Santa Elena,<br>Calle Apaneca #4C,<br>Antiguo Cuscatlán, El Salvador.</l
