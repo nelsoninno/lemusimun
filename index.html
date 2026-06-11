@@ -139,12 +139,16 @@
       background-position: center center;
       background-repeat: no-repeat;
       opacity: 0.25;
-      filter: blur(2px);
-      /* Difuminado en los bordes (% = responsivo en cualquier pantalla) */
-      -webkit-mask-image: linear-gradient(to right,
-        transparent 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 78%, transparent 100%);
-      mask-image: linear-gradient(to right,
-        transparent 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 78%, transparent 100%);
+      filter: blur(3px);
+      /* Difuminado en los 4 bordes para que la foto no se vea cortada (% = responsivo) */
+      -webkit-mask-image:
+        linear-gradient(to right, transparent 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 78%, transparent 100%),
+        linear-gradient(to bottom, transparent 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, transparent 100%);
+      -webkit-mask-composite: source-in;
+      mask-image:
+        linear-gradient(to right, transparent 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 78%, transparent 100%),
+        linear-gradient(to bottom, transparent 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, transparent 100%);
+      mask-composite: intersect;
     }
     /* Gradiente sobre la imagen para legibilidad */
     .hero-bg-overlay {
@@ -1252,11 +1256,11 @@
     <p class="section-label">Nuestro Trabajo</p>
     <h2 class="section-headline">PENSAMOS A TU MEDIDA</h2>
     <div class="portfolio-grid">
-      <!-- Video 1: La Generación del 82 -->
+      <!-- Video 1: Sistema Fedecrédito — Soluciones Financieras 85 años -->
       <div class="portfolio-item">
         <div class="portfolio-card">
           <video class="portfolio-video" controls preload="metadata">
-            <source src="La Generación del 82_Ganadores.mp4" type="video/mp4" />
+            <source src="SF-Soluciones Financieras 85años.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="portfolio-overlay">
@@ -1462,7 +1466,7 @@
       </div>
       <div class="team-card">
         <div class="team-photo-wrap">
-          <img class="team-photo" src="DSC09567.png" alt="Marcela Lemus" />
+          <img class="team-photo" src="Lemusimun-7497.jpg" alt="Marcela Lemus" />
         </div>
         <div class="team-info">
           <div class="team-info-text">
@@ -1476,7 +1480,7 @@
       </div>
       <div class="team-card">
         <div class="team-photo-wrap">
-          <img class="team-photo" src="DSC09507.png" alt="Eduardo Lemus" />
+          <img class="team-photo" src="Lemusimun-7414.jpg" alt="Eduardo Lemus" />
         </div>
         <div class="team-info">
           <div class="team-info-text">
@@ -1592,16 +1596,4 @@
           <ul class="footer-links">
             <li><a href="tel:+50322335000">+(503) 2233-5000</a></li>
             <li><a href="mailto:info@lemusimuncorp.com">info@lemusimuncorp.com</a></li>
-            <li>Res. Arcos de Santa Elena,<br>Calle Apaneca #4C,<br>Antiguo Cuscatlán, El Salvador.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-copy">© 2026 Lemusimún Publicidad. Todos los derechos reservados.</p>
-        <div class="footer-badge">50 Años · 1976–2026</div>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
+            <li>Res. Arcos de Santa Elena,<b
