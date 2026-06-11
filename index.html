@@ -134,15 +134,12 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('50solo.png');
-      background-size: contain;
+      /* Banner neón "50 años" a pantalla completa (fondo negro = se funde con el hero) */
+      background-image: url('cover-linkedin.png');
+      background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
-      opacity: 0.25;
-      filter: blur(3px);
-      /* Difuminado radial: la imagen se funde con el negro en todos los bordes (sin cortes) */
-      -webkit-mask-image: radial-gradient(ellipse 65% 60% at 50% 45%, #000 30%, transparent 78%);
-      mask-image: radial-gradient(ellipse 65% 60% at 50% 45%, #000 30%, transparent 78%);
+      opacity: 0.6;
     }
     /* Gradiente sobre la imagen para legibilidad */
     .hero-bg-overlay {
@@ -1056,6 +1053,8 @@
     @media (max-width: 960px) {
       nav { padding: 1rem 1.5rem; }
       .nav-inner { padding: 1rem 1.5rem; }
+      /* En móvil el banner es muy apaisado: mostrarlo completo sin recortar */
+      .hero-bg { background-size: contain; opacity: 0.8; }
       .nav-links { display: none; }
       .hamburger { display: flex; margin-left: auto; }
       #sobre-nosotros, #portafolio, #equipo, #stats,
@@ -1592,4 +1591,8 @@
           <ul class="footer-links">
             <li><a href="tel:+50322335000">+(503) 2233-5000</a></li>
             <li><a href="mailto:info@lemusimuncorp.com">info@lemusimuncorp.com</a></li>
-            <li>Res. Arcos de Santa Elena,<br>Calle Apaneca #4C,<br>Antiguo Cuscatlán, El Salvador.</l
+            <li>Res. Arcos de Santa Elena,<br>Calle Apaneca #4C,<br>Antiguo Cuscatlán, El Salvador.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer
