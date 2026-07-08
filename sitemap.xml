@@ -5,18 +5,28 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://lemusimun.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lemusimun.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lemusimun.com/"/>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>1.0</priority>
   </url>
   <url>
     <loc>https://lemusimun.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lemusimun.com/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://lemusimun.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lemusimun.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lemusimun.com/"/>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lemusimun.com/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lemusimun.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lemusimun.com/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lemusimun.com/faq/"/>
+    <lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lemusimun.com/en/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lemusimun.com/faq/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lemusimun.com/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lemusimun.com/faq/"/>
+    <lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority>
   </url>
   <url><loc>https://lemusimun.com/llms.txt</loc><lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://lemusimun.com/llms-full.txt</loc><lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
